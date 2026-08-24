@@ -120,16 +120,47 @@
 
   /* ---------- Invoice Information ---------- */
 
-  .invoice-info{
-    display:grid;
-    grid-template-columns:1fr 1fr;
+  <!-- INVOICE INFORMATION -->
 
-    margin-bottom:45px;
-  }
+<section class="invoice-info">
 
-  .invoice-info div:last-child{
-    text-align:right;
-  }
+  <div>
+
+    <div class="label">
+      Invoice Number
+    </div>
+
+    <p>
+      GD-0001
+    </p>
+
+  </div>
+
+  <div>
+
+    <div class="label">
+      Invoice Date
+    </div>
+
+    <p>
+      DD / MM / YYYY
+    </p>
+
+  </div>
+
+  <div>
+
+    <div class="label">
+      Payment Due
+    </div>
+
+    <p>
+      Within 7 days
+    </p>
+
+  </div>
+
+</section>
 
 
   /* ---------- Items ---------- */
@@ -195,28 +226,26 @@
 
   /* ---------- Payment ---------- */
 
-  .payment{
-    margin-top:70px;
-    padding-top:20px;
+ <!-- PAYMENT -->
 
-    border-top:1px solid var(--line);
-  }
+<section class="payment">
 
-  .payment h2{
-    margin:0 0 12px;
+  <h2>
+    Payment Details
+  </h2>
 
-    font-size:12px;
-    font-weight:400;
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-  }
+  <p>
+    Payment due within 7 days of invoice date.<br><br>
 
-  .payment p{
-    margin:0;
+    Bank transfer<br>
+    Account Name: George Denver<br>
+    Sort Code: XX-XX-XX<br>
+    Account Number: XXXXXXXX<br><br>
 
-    font-size:12px;
-    line-height:1.7;
-  }
+    Please use the invoice number as your payment reference.
+  </p>
+
+</section>
 
 
   /* ---------- Footer ---------- */
