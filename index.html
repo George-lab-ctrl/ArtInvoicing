@@ -167,38 +167,22 @@
 
   /* ---------- Items ---------- */
 
-  .items{
-    width:100%;
-    border-collapse:collapse;
-    margin-bottom:35px;
-  }
+.items{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:35px;
+  table-layout:fixed;
+}
 
-  .items th{
-    text-align:left;
-    font-size:11px;
-    font-weight:400;
-    text-transform:uppercase;
-    letter-spacing:0.08em;
+.items th:first-child,
+.items td:first-child{
+  width:75%;
+}
 
-    padding:10px 0;
-
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-  }
-
-  .items td{
-    font-size:13px;
-    padding:16px 0;
-
-    border-bottom:1px solid #000;
-    vertical-align:top;
-  }
-
-  .items th:last-child,
-  .items td:last-child{
-    text-align:right;
-  }
-
+.items th:last-child,
+.items td:last-child{
+  width:25%;
+}
 
   /* ---------- Totals ---------- */
 
