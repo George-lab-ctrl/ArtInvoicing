@@ -164,44 +164,18 @@
 
 </section>
 
-
-  /* ---------- Items ---------- */
+/* ---------- Items ---------- */
 
 .items{
   width:100%;
-  border-collapse:collapse;
   margin-bottom:35px;
-  table-layout:fixed;
 }
 
-.items th,
-.items td{
-  font-size:12px;
-  vertical-align:top;
-  padding:0;
-}
-
-.items th{
-  font-size:12px;
-  font-weight:700;
-  padding-bottom:6px;
-}
-
-.items th:first-child,
-.items td:first-child{
-  width:35%;
-  text-align:left;
-}
-
-.items th:last-child,
-.items td:last-child{
-  width:65%;
-  text-align:right;
-  padding-right:0;
-}
-  .items{
+.artwork-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
   width:100%;
-  margin-bottom:35px;
 }
 
 .artwork-item{
@@ -213,7 +187,12 @@
   font-size:12px;
 }
 
-  
+.artwork-price{
+  font-size:13px;
+  text-align:right;
+  white-space:nowrap;
+}
+
   /* ---------- Totals ---------- */
 
   .totals{
@@ -486,12 +465,21 @@
     Description
   </div>
 
-  <div class="artwork-item">
-    Painting X<br>
-    <span>Acrylic on canvas</span>
+  <div class="artwork-row">
+
+    <div class="artwork-item">
+      Painting X<br>
+      <span>Acrylic on canvas</span>
+    </div>
+
+    <div class="artwork-price">
+      £120.00
+    </div>
+
   </div>
 
 </section>
+
 
   <!-- TOTAL -->
 
